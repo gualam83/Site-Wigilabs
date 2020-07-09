@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="awesome/css/all.min.css">
+  <link type="text/css" rel="stylesheet" href="css/styles.css">
+
+  <title>Prueba Wigilabs</title>
+</head>
+
+<body>
+  <header class="main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#imagesGallery">servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section id="imagesGallery">
+    <h2>Servicios</h2>
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center mb-5">
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">Todos</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="apps">APPs</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter"
+          data-rel="instrumObs">Instrumentación</button>
+        <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="consult">Consultoría</button>
+      </div>
+
+    </div>
+    <div class="gallery" id="gallery">
+      <div class="mb-3 pics animation all apps">
+        <img class="img-fluid" src="images/app1.jpg" alt="Card image cap">
+      </div>
+      <div class="mb-3 pics animation all instrumObs">
+        <img class="img-fluid" src="images/instrum2.jpg" alt="Card image cap">
+      </div>
+      <div class="mb-3 pics animation all apps">
+        <img class="img-fluid" src="images/app2.jpg" alt="Card image cap">
+      </div>
+      <div class="mb-3 pics animation all consult">
+        <img class="img-fluid" src="images/consult1.jpg" alt="Card image cap">
+      </div>
+      <div class="mb-3 pics animation all instrumObs">
+        <img class="img-fluid" src="images/instrum1.jpg" alt="Card image cap">
+      </div>
+      <div class="mb-3 pics animation all consult">
+        <img class="img-fluid" src="images/consult2.jpg" alt="Card image cap">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contáctenos</h2>
+    <div class="contactForm">
+      <form class="form-inline">
+
+        <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="name"
+          placeholder="Escribe tu nombre">
+        <input type="mobil" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="mobil"
+          placeholder="Escribe tu teléfono">
+        <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="email"
+          placeholder="Escribe tu correo">
+        <input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="message"
+          placeholder="Escribe tu mensaje">
+        <button type="submit" class="btn btn-primary mx-auto">Enviar</button>
+      </form>
+
+      <div class="image">
+        <p>Comunícanos tus inquietudes y nos pondremos en contacto contigo</p>
+        <img src="images/contact.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contain-footer">
+      <div>
+        <a class="navbar-brand" href="#"><img src="images/logoW.png" alt="logoW"></a>
+
+      </div>
+      <div class="lists">
+        <ul class="columns">
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#contact">Contáctenos</a></li>
+        </ul>
+        <ul class="columns">
+          <li><a href="https://drive.google.com/file/d/1gcVCW1b8e9U-4GSQjB0NKi4Nw8AVJVQw/view" target="_blank">Política
+              de Privacidad</a></li>
+          <li><a href="#imagesGallery">Servicios</a></li>
+        </ul>
+        <ul class="columns">
+          <li><a href="#">Inicio</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="social">
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/contact.js"></script>
+
+</body>
+<script src=" https://www.gstatic.com/firebasejs/5.0.4/firebase.js "> </script>
+<script>
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+</html>
